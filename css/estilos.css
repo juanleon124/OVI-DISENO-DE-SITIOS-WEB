@@ -1,0 +1,371 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: Sans-serif, Helvetica;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*---------- header ----------*/
+
+.header {
+    background: url('../img/fondo.png') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.header .cabecera {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo-cabecera {
+    width: 25%;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header .menu-ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .menu-enlace {
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.header .menu-enlace:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.header .texto-cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.header .texto {
+    color: #fff;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+.header h2 {
+    font-size: 1.2em;
+}
+
+.header .boton {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 60px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.header .boton:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*---------- presentacion ----------*/
+
+.section-presentacion {
+    width: 100%;
+    padding: 30px;
+}
+
+.section-presentacion .titulo {
+    font-size: 1.8em;
+    text-align: center;
+    color: #d89034;
+}
+
+.section-presentacion .texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.section-presentacion .logo {
+    width: 250px;
+}
+
+.section-presentacion img {
+    width: 100%;
+}
+
+.section-presentacion p {
+    line-height: 30px;
+    padding: 10px;
+}
+
+/*----------temario----------*/
+
+.section-temario {
+    width: 100%;
+    padding: 30px;
+    background-color: #f2f2f2;
+ 
+}
+
+.section-temario .titulo {
+    color: #184c99;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.section-temario .contenedor-temario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.section-temario .categoria{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-temario .imagen {
+    width: 260px;
+}
+
+.section-temario img {
+    width: 100%;
+}
+
+.section-temario .nombre {
+    color: #e7cc19;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/*----------complementos----------*/
+
+.section-complementos {
+    width: 100%;
+    padding: 30px;
+ 
+}
+
+.section-complementos .titulo {
+    font-size: 1.8em;
+    color: #d89034;
+    text-align: center;
+}
+
+.section-complementos .contenedor-complementos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.section-complementos .categoria{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-complementos .imagen{
+    width: 200px;
+}
+
+.section-complementos .editor{
+    width: 90%;
+}
+
+.section-complementos .glosario{
+    width: 100%;
+}
+.section-complementos .nombre {
+    color: #e7cc19;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/*----------footer-----------*/
+
+.footer{
+    width: 100%;
+    background: #1e2b38;
+}
+
+.footer .contenedor-footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .logo-footer{
+    width: 150px;
+}
+
+.footer img{
+    width: 100%;
+    vertical-align: top;
+}
+.footer p{
+    text-align: center;
+    color:#fff;
+    font-weight: 600;
+}
+
+
+/*---------- Responsive --------*/
+
+@media screen and (max-width:900px){
+    
+.header .cabecera {
+    width: 100%;
+    flex-direction: column;
+}
+
+.header .logo-cabecera {
+    width: 40%;
+    padding: 20px;
+}
+
+.header .menu-cabecera{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    width: 100%,
+}
+
+.header .texto-cabecera {
+    margin: 60px 0;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.header h2 {
+    font-size: 0.8em;
+}
+
+.header .boton {
+    padding: 15px 50px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+
+}
+
+@media screen and (max-width:700px){
+    .header .menu-cabecera{
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 3px;
+        width: 100%,
+    }
+
+    .header .menu-enlace {
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width:500px){
+
+    
+    body {
+        font-size: 14px;
+    }
+
+    .header .logo-cabecera {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .header .menu-cabecera{
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 3px;
+    }
+
+    .section-presentacion .texto{
+        flex-direction: column;
+    }
+
+
+    .section-presentacion .logo{
+        width: 200px;
+    }
+}
+
+    @media screen and (max-width:400px){
+
+        body {
+            font-size: 12px;
+        }
+
+        .header .logo-cabecera {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .section-presentacion .logo{
+            width: 150px;
+        }
+
+        .section-temario .imagen {
+            width: 200px;
+        }
+        
+
+        .footer .logo-footer{
+            width: 100px;
+        }
+}
