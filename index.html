@@ -13,7 +13,7 @@
         <link rel="shortcut icon" href="img/logo_unad.png">
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="inicio">
             <div class="contenedor">
                 <section class="cabecera">
                     <div class="logo-cabecera">
@@ -24,10 +24,10 @@
                     <div class="menu-cabecera">
                         <nav>
                             <ul class="menu-ul">
-                                <li><a class="menu-enlace" href="#">Inicio</a></li>
-                                <li><a class="menu-enlace" href="#">Presentacion</a></li>
-                                <li><a class="menu-enlace" href="#">Temario</a></li>
-                                <li><a class="menu-enlace" href="#">Complementos</a></li>
+                                <li><a class="menu-enlace" href="#inicio">Inicio</a></li>
+                                <li><a class="menu-enlace" href="#presentacion">Presentacion</a></li>
+                                <li><a class="menu-enlace" href="#temario">Temario</a></li>
+                                <li><a class="menu-enlace" href="#complementos">Complementos</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -35,7 +35,6 @@
                 <section class="texto-cabecera">
                     <div class="texto">
                         <h1>OVI - DISEÑO DE SITIOS WEB</h1>
-
                         <h2>Aprende HTML5,CSS,Git y Github...</h2>
                     </div>
                     <div class="boton-cabecera">
@@ -47,7 +46,7 @@
         </header>
 
         <article>
-            <section class="section-presentacion">
+            <section class="section-presentacion" id="presentacion">
                 <div class="contenedor">
                     <h2 class="titulo">Presentacion</h2>
                     <section class="texto">
@@ -74,7 +73,7 @@
                 </div>
             </section>
 
-            <section class="section-temario">
+            <section class="section-temario" id="temario">
                 <div class="contenedor">
                     <h2 class="titulo principal">Temario</h2>
                     <div class="contenedor-temario">
@@ -83,7 +82,8 @@
                                 <img src="img/html.png" alt="Imagen de HTML5">
                             </div>
                             <div class="descripcion">
-                                <p class="nombre">HTML5</p>
+                                <a class="nombre"
+                                    href="../adminHTML/adminHTML.html">HTML5</a>
                                 <p class="detalles">sintaxis,estructura,smantica,etiquetas...</p>
                             </div>
                         </section>
@@ -92,7 +92,7 @@
                                 <img src="img/css.png" alt="Imagen de CSS3">
                             </div>
                             <div class="descripcion">
-                                <p class="nombre">CSS3</p>
+                                <a class="nombre" href="#">CSS3</a>
                                 <p class="detalles">sintaxis,estructura,smantica,etiquetas...</p>
                             </div>
                         </section>
@@ -102,7 +102,7 @@
                                     Github">
                             </div>
                             <div class="descripcion">
-                                <p class="nombre">GIT - GITHUB</p>
+                                <a class="nombre" href="#">GIT - GITHUB</a>
                                 <p class="detalles">sintaxis,estructura,smantica,etiquetas...</p>
                             </div>
                         </section>
@@ -111,7 +111,7 @@
             </section>
 
 
-            <section class="section-complementos">
+            <section class="section-complementos" id=complementos>
                 <div class="contenedor">
                     <h2 class="titulo principal">Complementos</h2>
                     <div class="contenedor-complementos">
@@ -123,7 +123,7 @@
                                     Codigo">
                             </div>
                             <div class="descripcion">
-                                <p class="nombre">EDITORES DE CODIGO</p>
+                                <a class="nombre" href="#">EDITORES DE CODIGO</a>
                                 <p class="detalles">sintaxis,estructura,smantica,etiquetas...</p>
                             </div>
                         </section>
@@ -134,7 +134,7 @@
                                     Glosario">
                             </div>
                             <div class="descripcion">
-                                <p class="nombre">VOCABULARIO</p>
+                                <a class="nombre" href="#">VOCABULARIO</a>
                                 <p class="detalles">sintaxis,estructura,smantica,etiquetas...</p>
                             </div>
                         </section>
