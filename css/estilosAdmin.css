@@ -10,7 +10,7 @@ body {
     font-size: 16px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -21,7 +21,6 @@ a{
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 10% 82% 8%;
-    
 }
 
 /*---------- header ----------*/
@@ -92,7 +91,6 @@ a{
 
 .main .contenedor-terminologia {
     margin: 20px 20px 80px 20px;
-
     border: 1px solid #ccc;
     background-color: #fff;
     padding: 0 20px 20px 20px;
@@ -105,7 +103,23 @@ a{
     padding: 0 20px 20px 20px;
 }
 
-.main .texto{
+.main .contenedor-creditos {
+    margin: 20px 20px 80px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0 20px 20px 20px;
+}
+
+.main .contenedor-creditos .texto {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .texto {
     width: 50%;
 }
 
@@ -141,7 +155,7 @@ a{
     width: 500px;
 }
 
-.main .imagen-estructura-nav{
+.main .imagen-estructura-nav {
     width: 400px;
 }
 
@@ -149,28 +163,38 @@ a{
     width: 100%;
 }
 
-.main h3{
+.main h3 {
     text-align: center;
     font-size: 0.9em;
 }
 
-.main .video-estructura{
-    width: 600px;
-    height: 300px;
+.main .foto-deiner {
+    width: 100px;
+    border: 4px solid #184c99;
 }
 
-.main .actividades{
+.main .negrita{
+    font-weight: bold;
+}
+
+.main .video-estructura {
+    width: 800px;
+    height: 400px;
+}
+
+.main .iframe{
+    width: 100%;
+}
+
+.main .actividades {
     width: 1000px;
     height: 400px;
-    
 }
 
 .main .definicion {
     width: 100%;
     height: 100%;
 }
-
-
 
 /*---------- aside ----------*/
 
@@ -253,25 +277,23 @@ a{
     font-size: 0.9em;
 }
 
-
-
-.footer a{
+.footer a {
     color: #fff;
 }
 
-.footer .twitter{
+.footer .twitter {
     padding: 10px;
-    color:#fff;
+    color: #fff;
     display: block;
     border-radius: 3px;
     font-size: 0.9em;
 }
 
-.footer .widget a:hover{
+.footer .widget a:hover {
     background-color: #1da1f2;
 }
 
-.footer .autor:hover{
+.footer .autor:hover {
     text-decoration: underline;
 }
 
@@ -337,7 +359,6 @@ a{
         grid-template-columns: 100%;
         grid-template-rows: 10% 10% 70% 10%;
     }
-   
 }
 
 @media screen and (max-width:600px) {
@@ -361,6 +382,6 @@ a{
         width: 40px;
     }
     .footer .nombre {
-        display: none;
+        font-size: 0.6em;
     }
 }
